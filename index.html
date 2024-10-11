@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Hábitos Alimentares</title>
+</head>
+<body>
+    <h1>Pesquisa de Hábitos Alimentares</h1>
+    <form action="resultado.php" method="post">
+        
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+
+        <label for="idade">Idade:</label><br>
+        <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required><br><br>
+
+        <label>Com que frequência você faz as seguintes refeições?</label><br><br>
+
+        <label for="cafe">Café da Manhã:</label><br>
+        <select id="cafe" name="cafe">
+            <option value="todos_os_dias">Todos os dias</option>
+            <option value="alguns_dias">Alguns dias</option>
+            <option value="raramente">Raramente</option>
+            <option value="nunca">Nunca</option>
+        </select><br><br>
+
+        <label for="almoco">Almoço:</label><br>
+        <select id="almoco" name="almoco">
+            <option value="todos_os_dias">Todos os dias</option>
+            <option value="alguns_dias">Alguns dias</option>
+            <option value="raramente">Raramente</option>
+            <option value="nunca">Nunca</option>
+        </select><br><br>
+
+        <label for="jantar">Jantar:</label><br>
+        <select id="jantar" name="jantar">
+            <option value="todos_os_dias">Todos os dias</option>
+            <option value="alguns_dias">Alguns dias</option>
+            <option value="raramente">Raramente</option>
+            <option value="nunca">Nunca</option>
+        </select><br><br>
+
+        <label>Você costuma consumir alimentos industrializados?</label><br>
+        <input type="radio" id="sim" name="industrializados" value="sim" required>
+        <label for="sim">Sim</label><br>
+        <input type="radio" id="nao" name="industrializados" value="nao">
+        <label for="nao">Não</label><br><br>
+
+        <label>Com que frequência você consome frutas e vegetais?</label><br>
+        <select id="frutas_vegetais" name="frutas_vegetais">
+            <option value="todos_os_dias">Todos os dias</option>
+            <option value="alguns_dias">Alguns dias</option>
+            <option value="raramente">Raramente</option>
+            <option value="nunca">Nunca</option>
+        </select><br><br>
+
+        <label>Você segue algum tipo de dieta específica?</label><br>
+        <textarea id="dieta" name="dieta" rows="4" cols="50" placeholder="Se sim, descreva. Caso contrário, deixe em branco."></textarea><br><br>
+
+        <input type="submit" value="Enviar Pesquisa">
+    </form>
+</body>
+</html>
